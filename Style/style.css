@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-resalta:#22D4FD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #000000;
+    color: #f6f6f6;
+    box-sizing: border-box;
+}
+
+.boldTitle{
+    color: var(--color-resalta);
+}
+
+.header{
+    padding: 2% 0% 0% 10%;
+
+}
+
+.headerNav{
+    display: flex;
+    gap: 80px;
+}
+
+.headerLink{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-resalta);
+    text-decoration: none;
+}
+
+.presentacion{
+    display: flex;
+    align-items:center;
+    padding: 4% 10%;
+    justify-content: space-between;
+    gap: 5.625rem;
+}
+
+.presentacionContenido{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacionTitle{
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.presentacionParrafo{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.presentacionButton{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacionButtonLink{
+    width: 49%;
+    text-align: center;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600px;
+    color: #f6f6f6;
+    text-decoration: none;
+    border: 2px solid var(--color-resalta);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacionButtonLink:hover{
+    background-color: var(--color-resalta);
+}
+
+.imagenPortada{
+    width: 45%;
+}
+
+.titleAboutMe{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;    
+    font-weight: 400;
+}
+
+.footer{
+    padding: 24px;
+    background-color: var(--color-resalta);
+    color: #000000;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px ){
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+
+    .header{
+        padding: 10%;
+    }
+
+    .headerNav{
+        justify-content: center;
+    }
+
+    .presentacion{
+        padding: 2%;
+    }
+
+    .presentacionContenido{
+        width: auto;
+    }
+
+}
